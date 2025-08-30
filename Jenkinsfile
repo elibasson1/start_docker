@@ -8,7 +8,7 @@ pipeline
 				{
 				steps {
 					//	sh 'git clone https://github.com/elibasson1/start_docker.git'
-						sh 'docker build -t start_eli .'
+						sh 'docker build -t start-eli .'
 					}
 				}
 
