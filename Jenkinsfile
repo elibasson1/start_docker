@@ -7,7 +7,7 @@ pipeline
 				stage('Checkout & Build')
 				{
 				steps {
-						sh 'git clone https://github.com/elibasson1/start_docker.git'
+					//	sh 'git clone https://github.com/elibasson1/start_docker.git'
 						sh 'docker build -t start_eli .'
 					}
 				}
