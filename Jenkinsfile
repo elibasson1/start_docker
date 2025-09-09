@@ -1,13 +1,16 @@
-pipeline {
-    agent { label 'DemoNodeAgent' }
+pipeline
+{
+    agent {label 'DemoNodeAgent'}
 
-    stages {
-        stage('Checkout & Build') {
-            steps
-                {
-                    sh 'docker build -t start-eli .'
-                }
-            }
-        }
+    stages
+	{
+				stage('Checkout & Build')
+				{
+				steps {
+					//	sh 'git clone https://github.com/elibasson1/start_docker.git'
+						sh 'docker build -t start-eli .'
+					}
+				}
+
     }
 }
