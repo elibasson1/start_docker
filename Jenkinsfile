@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout & Build') {
             steps {
-                {
+                 {
                     sh 'docker build -t start-eli .'
                 }
             }
